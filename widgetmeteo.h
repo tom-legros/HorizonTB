@@ -13,6 +13,7 @@ private :
     QLabel *iconeMeteo;
     QLabel *labelDescription;
     int degres;
+
 public:
     explicit WidgetMeteo(QWidget *parent = nullptr);
 
