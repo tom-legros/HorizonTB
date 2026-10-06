@@ -1,0 +1,20 @@
+#ifndef WIDGETMETEO_H
+#define WIDGETMETEO_H
+
+#include <QWidget>
+#include <Qstring>
+#include <Qlabel>
+
+class WidgetMeteo : public QWidget
+{
+    Q_OBJECT
+private :
+    QLabel *labelMeteo;
+    int degres;
+public:
+    explicit WidgetMeteo(QWidget *parent = nullptr);
+
+signals:
+};
+
+#endif // WIDGETMETEO_H
