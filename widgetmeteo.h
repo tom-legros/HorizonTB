@@ -2,8 +2,8 @@
 #define WIDGETMETEO_H
 
 #include <QWidget>
-#include <Qstring>
-#include <Qlabel>
+#include <QString>
+#include <QLabel>
 
 class WidgetMeteo : public QWidget
 {

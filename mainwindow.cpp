@@ -1,8 +1,8 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
-#include "QScreen"
 #include <QHBoxLayout>
+#include <QScreen>
 
 #include "widgetmeteo.h"
 #include "widgethorloge.h"
@@ -19,13 +19,16 @@ MainWindow::MainWindow(QWidget *parent)
     QRect rect = ecran->geometry();
     setGeometry(rect.x(), rect.y(), rect.width(), 48);
     QWidget *Centre = centralWidget();
+    Centre->setStyleSheet("#centralwidget { background-color: rgba(20, 20, 20, 200); }"
+                          "QLabel { color: white; background: transparent; }");
 
     QHBoxLayout *layout = new QHBoxLayout(Centre);
     WidgetMeteo *meteoWidget = new WidgetMeteo(this);
     WidgetHorloge *horlogeWidget = new WidgetHorloge(this);
+
     layout->addWidget(meteoWidget);
     layout->addWidget(horlogeWidget);
-
+    setAttribute(Qt::WA_TranslucentBackground);
 }
 
 MainWindow::~MainWindow()

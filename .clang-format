@@ -1,0 +1,20 @@
+# Style de code de Horizon TB (lu par clang-format / Qt Creator)
+BasedOnStyle: Qt
+Language: Cpp
+IndentWidth: 4
+ColumnLimit: 100
+PointerAlignment: Right
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterClass: true
+  AfterFunction: true
+  AfterControlStatement: false
+SortIncludes: CaseSensitive
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex: '^"'          # nos fichiers d'abord
+    Priority: 1
+  - Regex: '^<Q'         # puis Qt
+    Priority: 2
+  - Regex: '^<'          # puis la bibliotheque standard
+    Priority: 3

@@ -20,7 +20,6 @@ WidgetHorloge::WidgetHorloge(QWidget *parent): QWidget{parent}
     layoutHeureV->addWidget(this->labelDate);
     layoutHeureV->addStretch();
     layoutHeureV->setContentsMargins(0, 0, 0, 0);
-
 }
 
 void WidgetHorloge::mettreAJourHeure()
