@@ -1,9 +1,9 @@
 #ifndef WIDGETHORLOGE_H
 #define WIDGETHORLOGE_H
 
-#include <QWidget>
 #include <QLabel>
 #include <QTimer>
+#include <QWidget>
 
 class WidgetHorloge : public QWidget
 {

@@ -4,8 +4,8 @@
 #include <QHBoxLayout>
 #include <QScreen>
 
-#include "widgetmeteo.h"
 #include "widgethorloge.h"
+#include "widgetmeteo.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)

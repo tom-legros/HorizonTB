@@ -1,15 +1,16 @@
 #include "widgethorloge.h"
-#include <QLabel>
-#include <QHBoxLayout>
-#include <QVBoxLayout>
-#include <QTimer>
 #include <QDateTime>
+#include <QHBoxLayout>
+#include <QLabel>
+#include <QTimer>
+#include <QVBoxLayout>
 
-WidgetHorloge::WidgetHorloge(QWidget *parent): QWidget{parent}
+WidgetHorloge::WidgetHorloge(QWidget *parent)
+    : QWidget{parent}
 {
     this->labelHeure = new QLabel(this);
-    this->labelDate  = new QLabel(this);
-    this->timer  = new QTimer(this);
+    this->labelDate = new QLabel(this);
+    this->timer = new QTimer(this);
 
     connect(this->timer, &QTimer::timeout, this, &WidgetHorloge::mettreAJourHeure);
     this->timer->start(1000);
@@ -28,6 +29,4 @@ void WidgetHorloge::mettreAJourHeure()
     Heure = QDateTime::currentDateTime();
     this->labelHeure->setText(Heure.toString("hh:mm"));
     this->labelDate->setText(Heure.toString("dd/MM/yyyy"));
-
 }
-
