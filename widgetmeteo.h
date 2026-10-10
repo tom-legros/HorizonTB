@@ -17,8 +17,12 @@ private:
     int degres;
     QNetworkAccessManager *reseau;
 
+    QString descriptionDepuisCode(int code);
+    QString iconeDepuisCode(int code);
+
 private slots:
     void reponseRecue(QNetworkReply *reponse);
+    void demanderMeteo();
 
 public:
     explicit WidgetMeteo(QWidget *parent = nullptr);
