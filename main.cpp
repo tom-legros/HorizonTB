@@ -6,6 +6,11 @@
 
 int main(int argc, char *argv[])
 {
+#ifdef Q_OS_LINUX
+    // Wayland ignore la position des fenêtres : on passe par XWayland pour garder la barre en haut
+    if (qEnvironmentVariableIsEmpty("QT_QPA_PLATFORM"))
+        qputenv("QT_QPA_PLATFORM", "xcb");
+#endif
     QApplication a(argc, argv);
 
     QTranslator translator;

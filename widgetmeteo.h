@@ -3,7 +3,7 @@
 
 #include <QLabel>
 #include <QNetworkAccessManager>
-#include <QNetworkreply>
+#include <QNetworkReply>
 #include <QString>
 #include <QWidget>
 

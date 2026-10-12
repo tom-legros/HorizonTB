@@ -1,6 +1,6 @@
 # HorizonTB 
 
-**HorizonTB** est une barre de tâches alternative et modulaire (Windows, Linux, macOS) conçue avec une panoplie de widgets personnalisables. 
+**HorizonTB** est une barre de tâches alternative et modulaire pour Windows, Linux (Ubuntu, Mint, Debian, Fedora, Arch...) et macOS, conçue avec une panoplie de widgets personnalisables. 
 Chaque composant (météo, horloge) est un widget autonome et indépendant.
 
 ## Fonctionnalités
